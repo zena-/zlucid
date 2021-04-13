@@ -33,4 +33,4 @@ Each product has a tag on it specifiying its minimum order quantity. The tag is 
 On the product template make the necessary customizations to ensure when the item is added to the cart it will not add a quantity less than the specified minimum order quantity.
 
 ### Task 2: Minimum order quantity part 2: the cart
-Following on from task 1 make the necessary customizations to the cart template so that items is in the cart can not have the quantity edited to be less than the minimum order quantity for that product.
+Following on from task 1 make the necessary customizations to the cart template so that the items in the cart can not have the quantity edited to be less than the minimum order quantity for that product.
