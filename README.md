@@ -6,7 +6,7 @@ This repo is for developers to use as part of the Lucid application process.
 
 ## Application test process
 
-### What do you need to do?
+### What do you need to do??
 There are two parts to settings up this test, the Github repository and the Shopify store.
 
 #### For the Github repository
