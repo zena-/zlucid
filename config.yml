@@ -1,0 +1,15 @@
+production:
+  theme_id: 109676495014
+  api_key: 88246e3a41c5f6921016bc87f97cf4a3
+  password: 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
+  store: corinth-one.myshopify.com
+staging:
+  theme_id: 109676495014
+  api_key: 88246e3a41c5f6921016bc87f97cf4a3
+  password: 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
+  store: corinth-one.myshopify.com
+development:
+  theme_id: 109676495014
+  api_key: 88246e3a41c5f6921016bc87f97cf4a3
+  password: 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
+  store: corinth-one.myshopify.com
