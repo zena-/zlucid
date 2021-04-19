@@ -9685,3 +9685,36 @@ function removeImageLoadingAnimation(image) {
     imageWrapper.removeAttribute('data-image-loading-animation');
   }
 }
+
+
+// product page mod #
+let productPageMOQ = document.querySelectorAll('p.productPageTags')[0].innerHTML.replace(/\D/g, '') 
+document.querySelector('input.product-form__input--quantity').setAttribute("value", `${productPageMOQ}`)
+let quCount = document.querySelector('input.product-form__input--quantity')
+quCount.onchange = () => {
+  if(quCount.value < productPageMOQ){
+    document.querySelectorAll('p.productPageTags')[0].style.visibility = 'visible'
+    document.querySelectorAll('p.productPageTags')[0].innerHTML = `The minimum order quantity for this product is ${productPageMOQ}`
+  }
+  else document.querySelectorAll('p.productPageTags')[0].style.visibility = 'hidden'
+ }
+
+
+// cart
+if (document.querySelector("form.cart")) {
+  var cartContents = fetch('/cart.js')
+  .then(response => response.json())
+  .then(data => { console.log(data.items) })
+  
+  console.log(document.querySelectorAll('.moq'))
+  document.querySelectorAll('.moq').forEach(m => {
+let moq = m.innerHTML.replace(/\D/g, '')
+let qutcart = (screen.width <= 699) ? document.querySelectorAll('input.cart__qty-input')[0] : document.querySelectorAll('input.cart__qty-input')[1]
+qutcart.min = this.moq
+document.querySelector('.moq').innerHTML= `Note: the minimum order quantity for this product is ${moq}` 
+  })
+}
+
+
+
+
